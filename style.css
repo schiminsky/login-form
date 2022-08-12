@@ -108,6 +108,14 @@ form .email-input::placeholder {
   display: flex;
 }
 
+form .email-input:focus::placeholder {
+  background-image: url(/assets/mail-focus.svg);
+  background-repeat: no-repeat;
+  background-position: 5px 0px;
+  background-size: contain;
+  text-indent: 28px;
+}
+
 div .password-container {
   width: 335px;
 }
@@ -139,6 +147,15 @@ form .password-input::placeholder {
   display: flex;
 }
 
+form .password-input:focus::placeholder {
+  background-image: url(/assets/lock-focus.svg), url(/assets/eye.svg);
+  background-repeat: no-repeat;
+  background-position: 5px 0px, 303px 0px;
+  background-size: contain;
+  text-indent: 28px;
+  display: flex;
+}
+
 div .checkbox-container {
   display: flex;
   margin-top: 20px;
@@ -148,6 +165,24 @@ div .checkbox-container {
 div .checkbox-div {
   display: flex;
   align-items: center;
+}
+
+div .checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+div .checkbox{
+  all: unset;
+  border: 1px solid #868686;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+div .checkbox:checked{
+  background-image: url(/assets/check.svg);
+  background-color: #FFC632;
 }
 
 div .checkbox-div label {

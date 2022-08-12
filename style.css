@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background-color: #191816;
+  display: flex;
+  max-width: 1440px;
+  max-height: 900px;
+}
+
+div .header {
+  display: flex;
+  margin: 40px 0 0 40px;
+}
+
+main .main-container {
+  display: flex;
+  margin: 80px 74px;
+}
+
+div .container {
+  display: flex;
+  flex-direction: column;
+  width: 572px;
+  height: 512px;
+  background: #24221F;
+  border-radius: 4px;
+  margin: auto;
+  margin-top: 10%;
+}
+
+div .main-text {
+  display: flex;
+  align-items: center;
+  max-height: 36px;
+  margin: 55px 0 5px 119px;
+}
+
+div .img-login {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+div .main-text h1 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #D4CCB6;
+}
+
+div .sub-text {
+  display: flex;
+  margin-left: 119px;
+}
+
+div .sub-text p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #AFB6C2;
+}
+
+div .email {
+  display: flex;
+  flex-direction: column;
+  margin-top: 27px;
+  margin-left: 119px;
+}
+
+div .email-container {
+  width: 335px;
+  margin-bottom: 20px;
+}
+
+form .email-label {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #AFB6C2;
+}
+
+form .email-input {
+  width: 335px;
+  height: 44px;
+  border: 1px solid #868686;
+  border-radius: 4px;
+  margin-top: 5px;
+  background-color: transparent;
+}
+
+form .email-input::placeholder {
+  background-image: url(/assets/mail.svg);
+  background-repeat: no-repeat;
+  background-position: 5px 0px;
+  background-size: contain;
+  text-indent: 28px;
+  display: flex;
+}
+
+div .password-container {
+  width: 335px;
+}
+
+form .password-label {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #AFB6C2;
+}
+
+form .password-input {
+  width: 335px;
+  height: 44px;
+  border: 1px solid #868686;
+  border-radius: 4px;
+  margin-top: 5px;
+  background-color: transparent;
+}
+
+form .password-input::placeholder {
+  background-image: url(/assets/lock.svg), url(/assets/eye.svg);
+  background-repeat: no-repeat;
+  background-position: 5px 0px, 303px 0px;
+  background-size: contain;
+  text-indent: 28px;
+  display: flex;
+}
+
+div .checkbox-container {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 119px;
+}
+
+div .checkbox-div {
+  display: flex;
+  align-items: center;
+}
+
+div .checkbox-div label {
+  margin-left: 5px;
+  margin-right: 75px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #A9AFB9;
+}
+
+div .checkbox-div p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFC632;
+}
+
+div .button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+div .button-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 334px;
+}
+
+div .button-div button {
+  width: 334px;
+  height: 51px;
+  background: #FFC632;
+  border-radius: 4px;
+  padding: 12px 24px;
+  color: #473404;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  }
+
+div .button-div p {
+  margin-top: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFC632;
+}
+
+div .button-div span {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFC632;
+}
+
+.main-img {
+  width: 720px;
+  top: -70px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-img {
+    display: none;
+  }
+
+  main .main-container {
+    margin: 0;
+  }
+
+  div .container {
+    margin: 0;
+    background-color: #191816;
+  }
+
+  div .main-text {
+    margin-left: 20px;
+  }
+
+  div .sub-text {
+    margin-left: 20px;
+  }
+
+  div .email {
+    margin-left: 20px;
+  }
+
+  div .checkbox-container {
+    margin-left: 20px;
+  }
+
+  div .button-container {
+    margin-left: 20px;
+    justify-content: left;
+  }
+
+  div .button-div {
+    margin-left: 20px;
+  }
+}
